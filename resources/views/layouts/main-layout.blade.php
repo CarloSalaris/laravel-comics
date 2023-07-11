@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Document</title>
+    <title>
+
+        @yield('pageName')
+
+    </title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +21,15 @@
 </head>
 
 <body>
-    <h1>MAIN LAYOUT</h1>
+
+    @include('components.header')
+
+    <div class="container">
+        @yield('content')
+    </div>
+
+    @include('components.footer')
+
 </body>
 
 </html>
