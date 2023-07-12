@@ -22,13 +22,13 @@
 
 <body class="bg-dark text-light">
 
-    @include('components.header')
+    @include('partials.header')
 
     <div class="container">
         @yield('content')
     </div>
 
-    @include('components.footer')
+    @include('partials.footer')
 
 </body>
 
